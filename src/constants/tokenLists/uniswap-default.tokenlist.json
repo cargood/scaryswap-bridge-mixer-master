@@ -1,0 +1,62 @@
+{
+  "name": "ScarySwap Default List",
+  "timestamp": "2021-01-21T23:57:10.982Z",
+  "version": {
+    "major": 2,
+    "minor": 0,
+    "patch": 0
+  },
+  "tags": {},
+  "logoURI": "ipfs://QmNa8mQkrNKp1WEEeGjFezDmDeodkWRevGFN8JCV7b4Xir",
+  "keywords": ["ScarySwap", "default"],
+  "tokens": [
+    {
+      "address": "0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83",
+      "chainId": 250,
+      "decimals": 18,
+      "name": "Wrapped FTM",
+      "symbol": "WFTM",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/64x64/3513.png"
+    },
+    {
+      "address": "0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E",
+      "chainId": 250,
+      "decimals": 18,
+      "name": "Dai Stablecoin",
+      "symbol": "DAI",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/64x64/4943.png"
+    },
+    {
+      "address": "0x04068DA6C83AFCFA0e13ba15A6696662335D5B75",
+      "chainId": 250,
+      "decimals": 6,
+      "name": "USD Coin",
+      "symbol": "USDC",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/64x64/3408.png"
+    },
+    {
+      "address": "0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454",
+      "chainId": 250,
+      "decimals": 18,
+      "name": "Wrapped BNB",
+      "symbol": "WBNB",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/64x64/7192.png"
+    },
+    {
+      "address": "0x74b23882a30290451A17c44f4F05243b6b58C76d",
+      "chainId": 250,
+      "decimals": 18,
+      "name": "Wrapped ETH",
+      "symbol": "WETH",
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/64x64/2396.png"
+    },
+    {
+      "address": "0xAD522217E64Ec347601015797Dd39050A2a69694",
+      "chainId": 250,
+      "decimals": 18,
+      "name": "PUMPKIN",
+      "symbol": "Pumpkin",
+      "logoURI": "/images/pumpkin.png"
+    }
+  ]
+}

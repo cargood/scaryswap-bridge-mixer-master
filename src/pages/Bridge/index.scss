@@ -1,0 +1,389 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+
+//bridge style
+.dark {
+  .brg {
+      height: 100%;
+      padding: 0;
+      display: flex;
+      flex-direction:column;
+      align-items: center;
+      background-color: white;
+  }  
+}
+.brg {
+    height: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    background-color: white;
+}
+
+.brg-card {
+    width: 100%;
+    max-width: 495px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: none;
+    border-radius: 25px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 20px;
+}
+
+.brg-ch {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 0 25px 8px;
+}
+
+.brg-ch-title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+    margin: 0;
+}
+
+.brg-ch-brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 8px 12px 15px 0;
+}
+
+.brg-ch-logo {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px 0 0;
+}
+
+.brg-ch-logo-text {
+    color: white;
+    font-size: 14px;
+    margin: 0px;
+}
+
+.brg-cm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 20px 0;
+    position: relative;
+    gap: 20px;
+}
+
+.brg-cm-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgb(248, 140, 63);
+  cursor: pointer;
+  transition-duration: 0.5s;
+  z-index: 2;
+}
+
+.brg-cm-btn:hover {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgb(248, 140, 63);
+}
+
+.brg-cm-card {
+    width: 100%;
+    height: 205px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: none;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 14px;
+    
+    .cm-title {
+       font-style: normal;
+       font-size: 14px;
+       font-weight: 500;
+       line-height: 20px;
+       color:rgba(255, 255, 255, 0.8);
+       margin: 0;
+    }
+
+    .cm-btn {
+      width: 100%;
+      height: 40px;
+      border-radius: 40px;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      background: transparent;
+      padding: 5px 15px 5px 8px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+
+      .cm-btn-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        .cm-btn-logo {
+          width:30px;
+          height: 30px;
+          border-radius: 50%;
+          background-color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .cm-btn-logo-img {
+            width: 24px;
+            height: 24px;
+          }
+        }
+
+        .cm-btn-text {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          color: white;
+          letter-spacing: 1px;
+        }
+      }
+    }
+
+    .cm-btn:active {
+      opacity: 50%;
+    }
+
+    .cm-logo {
+      width: 95px;
+      height: 95px;
+      background-color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .cm-logo-img {
+        width: 75px;
+        height: 75px;
+      }
+    }
+}
+
+.brg-ct {
+  width: 100%;
+  border: none;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.05);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  
+  .brg-ct-tb {
+    padding: 20px 18px;
+    width: 100%;
+    height: 115px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow:rgba(0, 0, 0, 0.09) 0px 38px 94px, rgba(0, 0, 0, 0.06) 0px 19.2375px 40.9781px, rgba(0, 0, 0, 0.043) 0px 7.6px 15.275px, rgba(0, 0, 0, 0.027) 0px 1.6625px 5.43437px;
+    z-index: 3;
+    
+    .brg-ct-title{
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 14px;
+        line-height: 19px;
+        margin-left: 5px;
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    .brg-ct-set {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+
+      .brg-ct-btn {
+        width: 110px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        border-radius: 20px;
+        background-color: transparent;
+        padding: 4px 17px 4px 6px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        box-sizing: border-box;
+        flex: none;
+
+        .brg-ctb-container {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+        }
+        .brg-ctb-logo{
+          width: 30px;
+          height: 30px;
+          background-color: white;
+          border: none;
+          border-radius: 50%;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+        }
+        .brg-ctb-img {
+          width: 24px;
+          height: 24px;
+        }
+        .brg-ctb-txt {
+          color: white;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+        }
+      }
+      .brg-ct-btn:active{
+        opacity: 60%;
+      }
+
+      .brg-ct-val {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        gap: 12px;
+
+        .brg-ct-inp{
+          flex: 1 1 auto;
+          text-align: end;
+          width: 0px;
+          min-width: 44px;
+          font-size: 24px;
+          font-weight: 500;
+          background-color: transparent;
+          border: none;
+          outline: none;
+          overflow: hidden;
+          color: white;
+          padding: 0;
+        }
+        .brg-ct-max {
+          width: 50px;
+          height: 24px;
+          border-radius: 22px;
+          border: none;
+          color: rgb(57, 64, 78);
+          background-color: rgba(255, 255, 255, 0.75);
+        }
+      }
+    }
+  }
+  .brg-ct-bl{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 18px 16px;
+    box-sizing: border-box;
+    height: 86px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.005);
+    border-radius: 0 0 25px 25px;
+
+    .brg-ct-bal{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .ct-bal-type {
+        font-style: normal;
+        font-size: 14px;
+        font-weight: 500;
+        color:rgba(255, 255, 255, 0.4);
+        margin: 0;
+      }
+
+      .ct-bal-val {
+        font-style: normal;
+        font-size: 14px;
+        font-weight: 500;
+        color:rgba(255, 255, 255, 0.4);
+        margin: 0;
+      }
+    }
+  }
+}
+
+.brg-cb {
+  width: 100%;
+  height: 54px;
+  border: none;
+  border-radius: 40px;
+  color: white;
+  margin: 30px 0 0 0;
+  cursor: pointer;
+  background: radial-gradient(100% 100% at 3% 3%, rgb(255,230,107) 0%, rgb(240,107,12) 100%);
+  transition: all 0.3s ease 0s;
+}
+
+.brg-cb:active {
+  opacity: 60%;
+}
+
+.brg-spt {
+  margin-top: 40px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 443px;
+}
+.brg-spt-content { 
+    margin: 0;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: rgb(199, 199, 199);
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
