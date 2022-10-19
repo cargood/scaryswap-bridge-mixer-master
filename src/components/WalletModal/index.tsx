@@ -18,6 +18,7 @@ import { ApplicationModal } from 'state/application/actions'
 import { useModalOpen, useWalletModalToggle } from 'state/application/hooks'
 import MetamaskIcon from 'assets/images/metamask.png'
 import { ReactComponent as Close } from 'assets/images/x.svg'
+import { useLocation } from 'react-router-dom'
 
 const CloseIcon = styled.div`
   position: absolute;
@@ -124,6 +125,7 @@ export default function WalletModal({
   ENSName?: string
 }) {
   // important that these are destructed from the account-specific web3-react context
+  const location = useLocation()
   const { active, account, connector, activate, error } = useWeb3React()
 
   const [walletView, setWalletView] = useState(WALLET_VIEWS.ACCOUNT)
@@ -287,6 +289,9 @@ export default function WalletModal({
   }
 
   function getModalContent() {
+    
+    if(location.pathname != "/Bridge") {
+
     if (error) {
       return (
         <UpperSection>
@@ -306,6 +311,8 @@ export default function WalletModal({
         </UpperSection>
       )
     }
+    }
+  
     if (account && walletView === WALLET_VIEWS.ACCOUNT) {
       return (
         <AccountDetails
@@ -359,6 +366,7 @@ export default function WalletModal({
         </ContentWrapper>
       </UpperSection>
     )
+    
   }
 
   return (

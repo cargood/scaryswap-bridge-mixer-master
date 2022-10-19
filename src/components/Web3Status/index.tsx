@@ -11,6 +11,7 @@ import { useWalletModalToggle } from 'state/application/hooks'
 import { isTransactionRecent, useAllTransactions } from 'state/transactions/hooks'
 import { TransactionDetails } from 'state/transactions/reducer'
 import { shortenAddress } from 'utils'
+import { useLocation } from 'react-router-dom'
 
 const NetworkIcon = styled(Activity)`
   margin-left: 0.25rem;
@@ -29,6 +30,8 @@ function Web3StatusInner() {
   const { ENSName } = useENSName(account ?? undefined)
 
   const allTransactions = useAllTransactions()
+  const location = useLocation(); 
+  console.log("current path: ", location.pathname)
 
   const sortedRecentTransactions = useMemo(() => {
     const txs = Object.values(allTransactions)
@@ -40,6 +43,13 @@ function Web3StatusInner() {
   const hasPendingTransactions = !!pending.length
   const toggleWalletModal = useWalletModalToggle()
 
+  if(location.pathname == "/Bridge") {
+      return (
+        <div style={{display: "none"}}></div>
+      )
+  }
+
+  else {
   if (account) {
     return (
       <button
@@ -67,7 +77,7 @@ function Web3StatusInner() {
         onClick={toggleWalletModal}
       >
         <NetworkIcon />
-        <p>{error instanceof UnsupportedChainIdError ? 'Wrong Network' : 'Error'}</p>
+        <p>{ error instanceof UnsupportedChainIdError ? 'Wrong Network' : 'Error'}</p>
       </button>
     )
   } else {
@@ -81,6 +91,7 @@ function Web3StatusInner() {
       </button>
     )
   }
+}
 }
 
 export default function Web3Status() {

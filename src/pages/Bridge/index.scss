@@ -18,25 +18,14 @@ code {
   height: 6px;
 }
 
-
-//bridge style
-.dark {
-  .brg {
-      height: 100%;
-      padding: 0;
-      display: flex;
-      flex-direction:column;
-      align-items: center;
-      background-color: white;
-  }  
-}
 .brg {
     height: 100%;
     padding: 0;
     display: flex;
     flex-direction:column;
     align-items: center;
-    background-color: white;
+    border-radius: 20px;
+    
 }
 
 .brg-card {
@@ -44,13 +33,20 @@ code {
     max-width: 495px;
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.05);
-    border: none;
-    border-radius: 25px;
+    border-radius: 20px;
     backdrop-filter: blur(15px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 25px 20px;
+    background-color: white;
+
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    border: 1px solid rgb(229, 231, 235);
 }
 
 .brg-ch {
@@ -66,7 +62,8 @@ code {
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
-    color: white;
+    font-family: Montserrat;
+    color: #111827;
     margin: 0;
 }
 
@@ -85,7 +82,8 @@ code {
 }
 
 .brg-ch-logo-text {
-    color: white;
+    font-family: Montserrat;
+    color: #111827;
     font-size: 14px;
     margin: 0px;
 }
@@ -113,6 +111,8 @@ code {
   cursor: pointer;
   transition-duration: 0.5s;
   z-index: 2;
+  padding: 6px;
+  outline: 0;
 }
 
 .brg-cm-btn:hover {
@@ -121,10 +121,10 @@ code {
 }
 
 .brg-cm-card {
-    width: 100%;
+    width: calc(50% - 10px);
     height: 205px;
-    background-color: rgba(255, 255, 255, 0.05);
-    border: none;
+    background-color: rgb(243, 244, 246);
+    
     border-radius: 25px;
     display: flex;
     flex-direction: column;
@@ -132,12 +132,20 @@ code {
     justify-content: space-between;
     padding: 16px 14px;
     
+    border: 1px solid rgb(229, 231, 235);
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+
     .cm-title {
        font-style: normal;
        font-size: 14px;
        font-weight: 500;
        line-height: 20px;
-       color:rgba(255, 255, 255, 0.8);
+       font-family: Montserrat;
+       color: #111827;
        margin: 0;
     }
 
@@ -145,13 +153,20 @@ code {
       width: 100%;
       height: 40px;
       border-radius: 40px;
-      border: 1px solid rgba(255, 255, 255, 0.4);
+      outline: 0;
       background: transparent;
       padding: 5px 15px 5px 8px;
       display: flex;
       align-items: center;
       cursor: pointer;
       transition: all 0.3s ease 0s;
+
+      border: 1px solid rgb(229, 231, 235);
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+      --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+      box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 
       .cm-btn-container {
         display: flex;
@@ -178,7 +193,8 @@ code {
           font-style: normal;
           font-weight: 500;
           font-size: 14px;
-          color: white;
+          font-family: Montserrat;
+          color: #111827;
           letter-spacing: 1px;
         }
       }
@@ -206,26 +222,34 @@ code {
 
 .brg-ct {
   width: 100%;
-  border: none;
+  border: 1px solid rgb(229, 231, 235);
   border-radius: 25px;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgb(243, 244, 246);
   z-index: 2;
   display: flex;
   flex-direction: column;
+
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   
   .brg-ct-tb {
     padding: 20px 18px;
+    border-radius: 25px 25px 0 0;
     width: 100%;
     height: 115px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-shadow:rgba(0, 0, 0, 0.09) 0px 38px 94px, rgba(0, 0, 0, 0.06) 0px 19.2375px 40.9781px, rgba(0, 0, 0, 0.043) 0px 7.6px 15.275px, rgba(0, 0, 0, 0.027) 0px 1.6625px 5.43437px;
+    box-shadow:rgba(0, 0, 0, 0.01) 0px 38px 94px, rgba(0, 0, 0, 0.02) 0px 19.2375px 40.9781px, rgba(0, 0, 0, 0.023) 0px 7.6px 15.275px, rgba(0, 0, 0, 0.027) 0px 1.6625px 5.43437px;
     z-index: 3;
     
     .brg-ct-title{
-        color: rgba(255, 255, 255, 0.8);
+        font-family: Montserrat;
+        color: #111827;
         font-size: 14px;
         line-height: 19px;
         margin-left: 5px;
@@ -245,14 +269,22 @@ code {
         height: 40px;
         display: flex;
         align-items: center;
-        border: 1px solid rgba(255, 255, 255, 0.4);
         border-radius: 20px;
-        background-color: transparent;
+        background: transparent;
         padding: 4px 17px 4px 6px;
         cursor: pointer;
         transition: all 0.3s ease 0s;
         box-sizing: border-box;
+        outline: 0;
         flex: none;
+
+
+        --tw-ring-shadow: 0 0 #0000;
+        --tw-ring-offset-shadow: 0 0 #0000;
+        --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+        --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+        border: 1px solid rgb(229, 231, 235);
 
         .brg-ctb-container {
           width: 100%;
@@ -277,7 +309,8 @@ code {
           height: 24px;
         }
         .brg-ctb-txt {
-          color: white;
+          font-family: Montserrat;
+          color: #111827;
           font-size: 14px;
           font-style: normal;
           font-weight: 500;
@@ -316,6 +349,17 @@ code {
           border: none;
           color: rgb(57, 64, 78);
           background-color: rgba(255, 255, 255, 0.75);
+
+          --tw-ring-shadow: 0 0 #0000;
+          --tw-ring-offset-shadow: 0 0 #0000;
+          --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+          --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+          box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+          border: 1px solid rgb(229, 231, 235);
+        }
+
+        .brg-ct-max:active {
+          opacity: 60%;
         }
       }
     }
@@ -341,7 +385,8 @@ code {
         font-style: normal;
         font-size: 14px;
         font-weight: 500;
-        color:rgba(255, 255, 255, 0.4);
+        font-family: Montserrat;
+        color: #111827;
         margin: 0;
       }
 
@@ -349,7 +394,8 @@ code {
         font-style: normal;
         font-size: 14px;
         font-weight: 500;
-        color:rgba(255, 255, 255, 0.4);
+        font-family: Montserrat;
+        color: #111827;
         margin: 0;
       }
     }
@@ -387,3 +433,12 @@ code {
     font-family: "IBM Plex Sans", sans-serif;
 }
 
+.drop-theme{
+  fill: black;
+}
+
+@media screen and (max-width: 500px) {
+    .cm-btn-logo{
+      display: none !important;
+    }
+}

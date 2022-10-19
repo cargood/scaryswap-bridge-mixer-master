@@ -55,7 +55,7 @@ export default function Header() {
     })()
   }, [ftmContract, pumpkinContract])
   return (
-    <Disclosure as="nav" className="fixed top-0 z-50 bg-white shadow dark:shadow-gray-700 dark:bg-zinc-900 w-full">
+    <Disclosure as="nav" className="fixed top-0 z-10 bg-white shadow dark:shadow-gray-700 dark:bg-zinc-900 w-full">
       {() => (
         <div className="px-6 mx-auto max-w-7xl lg:px-8">
           <div className="flex justify-between h-16">

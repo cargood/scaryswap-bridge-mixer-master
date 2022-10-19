@@ -37,8 +37,6 @@
   font-style: normal;
   font-display: swap;
 }
-@tailwind base;
-@tailwind components;
 
 * {
   font-family: Montserrat;
@@ -82,4 +80,6 @@ input[type='number'] {
   -moz-appearance: textfield;
 }
 
+@tailwind base;
+@tailwind components;
 @tailwind utilities;
